@@ -55,7 +55,7 @@ This query looks at those top 10 highest-paying remote roles to see exactly what
 - ⚙️ **SQL Mechanics:** Executes an inner join linking the job postings table to the skills dimension tables to isolate the tech requirements of the highest-paying subset.
 - 📈 **What it shows:** High-paying jobs don't just require rare or specialized tools; they heavily rely on a core stack. **SQL, Excel, and Python** formed the most common combination even at the highest pay scales.
 
-![Top paying in demand skills](assets\top_skills_for_top_paying_dark.png.png)
+![Top paying in demand skills](assets/top_skills_for_top_paying_dark.png.png)
 
 ---
 
@@ -64,7 +64,7 @@ This query identifies the skills that appear most frequently across the entire u
 - ⚙️ **SQL Mechanics:** Uses count aggregations (`COUNT(job_id)`) grouped by skill name (`GROUP BY`) and ordered by descending frequency volume.
 - 📈 **What it shows:** **SQL** leads the market with 92,628 mentions (~30.6% market volume), making it a foundational requirement. **Excel** closely follows with 67,031 mentions (~22.1%), proving that spreadsheet tools remain essential across the wider industry.
 
-![Most In-Demand Skills](assets\top_demand_skills_dark.png.png)
+![Most In-Demand Skills](assets/top_demand_skills_dark.png.png)
 
 ---
 
@@ -73,7 +73,7 @@ This query calculates the global average annual salary associated with each indi
 - ⚙️ **SQL Mechanics:** Combines inner joins with an average aggregation (`AVG(salary_year_avg)`) while filtering out undisclosed salaries.
 - 📈 **What it shows:** High market demand does not always equal a high salary. Niche tools like Web3 (**Solidity**), specialized data scaling (**Couchbase**), and automation/deployment frameworks (**Terraform**, **Kafka**, **Airflow**) command the highest salaries because the pool of talent is relatively small.
 
-![Highest Paying Skills](assets\top_paying_skills_dark.png.png)
+![Highest Paying Skills](assets/top_paying_skills_dark.png.png)
 
 ---
 
